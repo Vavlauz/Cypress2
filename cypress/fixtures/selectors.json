@@ -1,0 +1,21 @@
+{
+    "hallNameField": "form > .conf-step__label > .conf-step__input",
+    "confHallButton": "form > .conf-step__buttons > .conf-step__button-accent",
+    "hallConfConfirmButton": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+    "priceConfConfirmButton": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+    "rows": "#input_rows_count",
+    "places": "#input_places_count",
+    "priceStd": "#input_price_standart",
+    "priceVip": "#input_price_vip",
+    "mainTitle": ".page-header__title",
+    "priceConnfSave": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+    "poster": "[value='Загрузить постер']",
+    "addFilmInTimeline": "[value='Добавить фильм']",
+    "addFilm": ".conf-step__paragraph > a > .conf-step__button",
+    "filmName": ".popup__form > :nth-child(1) > .conf-step__input",
+    "filmTime": ":nth-child(2) > .conf-step__input",
+    "filmType": ".popup__form > :nth-child(3) > .conf-step__input",
+    "filmCountry": ":nth-child(4) > .conf-step__input",
+    "lastStdPrice": "[data-last-value=400]",
+    "newHallCheck": "[value=MyHall]"
+  }
