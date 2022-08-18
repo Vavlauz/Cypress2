@@ -16,6 +16,8 @@ bower_components/
 /package-lock.json
 /coverage
 cypress/e2e
+cypress/videos
+cypress/screenshots
 
 npm-debug.log
 yarn-error.log

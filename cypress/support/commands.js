@@ -24,19 +24,11 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const selector = require("../fixtures/selectors.json");
-const seats = require("../fixtures/seats.json");
-const prices = require("../fixtures/prices.json");
 const testData = require("../fixtures/testData.json");
 
-Cypress.Commands.add("login", () => {
-  cy.get('[for="email"] > .login__input').type("qamid@qamid.ru");
-  cy.get('[for="pwd"] > .login__input').type("qamid");
-  cy.get(".login__button").click();
-});
-
-Cypress.Commands.add("invalidLogin", () => {
-  cy.get('[for="email"] > .login__input').type("qamid@qam.ru");
-  cy.get('[for="pwd"] > .login__input').type("qamid");
+Cypress.Commands.add("login", (login, password) => {
+  cy.get('[for="email"] > .login__input').type(login);
+  cy.get('[for="pwd"] > .login__input').type(password);
   cy.get(".login__button").click();
 });
 

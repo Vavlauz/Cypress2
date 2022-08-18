@@ -1,5 +1,14 @@
 {
     "newHallallName": "MyHall",
     "adminUrl": "http://qamid.tmweb.ru/admin/",
-    "clientUrl": "http://qamid.tmweb.ru/client/index.php"
+    "clientUrl": "http://qamid.tmweb.ru/client/index.php",
+    "adminForEqual": "Администраторррская",
+    "deskForEqual": "Управление залами",
+    "mistakeForEqual": "Ошибка авторизации!",
+    "logoHeader": "Идём",
+    "nameHall": "data.newHall",
+    "timeSession": "10:00",
+    "timeSessionForEqual": "Начало сеанса: 10:00",
+    "takeTicket": "Электронный билет",
+    "paymentPage": "http://qamid.tmweb.ru/client/payment.php"
   }
