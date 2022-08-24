@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:dash": "cypress run --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2"
+    "cy:dash": "cypress run --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2",
+    "cy:spec1": "cypress run --spec 'cypress/integration/booking/booking-ticket-in-accessible-hall.spec.js' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2",
+    "cy:spec2": "cypress run --spec 'cypress/integration/films/home-page-display.spec.js' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2",
+    "cy:spec3": "cypress run --spec 'cypress/integration/booking/login-verification-in-admin.spec.js' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2",
+    "cy:spec4": "cypress run --spec 'cypress/integration/films/newPrice.spec.js' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2",
+    "cy:chromeParallel": "npm run cy:spec1 -- --browser chrome --group Spec1 --ci-build-id 1 & npm run cy:spec2 -- --browser chrome --group Spec2 --ci-build-id 1 & npm run cy:spec3 -- --browser chrome --group Spec3 --ci-build-id 1 & npm run cy:spec4 -- --browser chrome --group Spec4 --ci-build-id 1",
+    "cy:electronParallel": "npm run cy:spec1 -- --group Spec1 --ci-build-id 2 & npm run cy:spec2 -- --group Spec2 --ci-build-id 2 & npm run cy:spec3 -- --group Spec3 --ci-build-id 2 &  npm run cy:spec4 -- --group Spec4 --ci-build-id 2",
+    "cy:firefoxParallel": "npm run cy:spec1 -- --browser firefox --group Spec1 --ci-build-id 3 & npm run cy:spec2 -- --browser firefox --group Spec2 --ci-build-id 3 & npm run cy:spec3 -- --browser firefox --group Spec3 --ci-build-id 3 & npm run cy:spec4 -- --browser firefox --group Spec4 --ci-build-id 3",
+    "cy:streamsParallel": "cypress run --spec 'cypress/integration/booking/**/*' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2 --browser chrome --group Spec1 --ci-build-id 8 & cypress run --spec 'cypress/integration/films/**/*' --record --key e182ce57-d867-4ac5-b50d-988ae955a9a2 --browser electron --group Spec2 --ci-build-id 8"
   },
   "keywords": [],
   "author": "Vavlauz",
